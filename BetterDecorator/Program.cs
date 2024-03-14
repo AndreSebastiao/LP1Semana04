@@ -2,15 +2,32 @@
 
 namespace BetterDecorator
 {
+    /// <summary>
+    /// Main class of the program
+    /// Get an input of 3 parameters and print
+    /// a text based on said parameters
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Method that prints the the text
+        /// </summary>
+        /// <param name="args">Arguments needed to print the text
+        /// A string with "", a char with "" and and int
+        /// </param>
         static void Main(string[] args)
         {
             //Print based on the different arguments
             Console.WriteLine(Decor(args[0], char.Parse(args[1]), int.Parse(args[2])));
         }
 
-        //Set the parameters for each argument
+        /// <summary>
+        /// Reads input and returns a string
+        /// </summary>
+        /// <param name="s">String provided</param>
+        /// <param name="c">Special char provided</param>
+        /// <param name="i">Int provided</param>
+        /// <returns>A string</returns>
         private static string Decor (string s, char c, int i)
         {
             string p = "";
