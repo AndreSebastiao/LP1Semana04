@@ -17,8 +17,16 @@ namespace BetterDecorator
         /// </param>
         static void Main(string[] args)
         {
-            //Print based on the different arguments
-            Console.WriteLine(Decor(args[0], char.Parse(args[1]), int.Parse(args[2])));
+            //Check if it has enough arguments or not 
+            if (args.Length != 3)
+            {
+                Console.WriteLine(Decor("User did not specify args!", '=', 3));
+            }
+            else
+            {
+                //Print based on the different arguments
+                Console.WriteLine(Decor(args[0], char.Parse(args[1]), int.Parse(args[2])));
+            }
         }
 
         /// <summary>
